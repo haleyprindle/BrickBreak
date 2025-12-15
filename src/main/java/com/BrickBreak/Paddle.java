@@ -7,7 +7,6 @@
 
 package com.BrickBreak;
 
-import java.awt.Graphics;
 import java.awt.*;
 
 public class Paddle {
@@ -63,7 +62,10 @@ public class Paddle {
 
 	public void addVelocity(int addVelocity)
 	{
-		this.xVelocity+= addVelocity;
+		if(!(addVelocity>0 && this.xVelocity>10) || !(addVelocity<0 && this.xVelocity<-10)
+		){
+			this.xVelocity+= addVelocity;
+		}
 	}	
 	
 	public void setX (int x)
@@ -76,10 +78,9 @@ public class Paddle {
 		this.xVelocity = xVelocity;
 	}
 
-	public void move ()
-	{
-		x+=xVelocity;
-	}
+	public void move() {
+	    x+=xVelocity;	 
+	 }
 
 	public void draw (Graphics g)
 	{
