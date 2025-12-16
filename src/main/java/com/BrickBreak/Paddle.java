@@ -1,7 +1,8 @@
 //
 //  Class author:  Haley Prindle 
 //  Date created:  12/12/25
-//  General description: a brief summary of what this particular class does.
+//  General description: creates the movement, speed, properties, 
+// 	and presence of a paddle in the Brickbreak game.
 //
 
 
@@ -109,3 +110,4 @@ public class Paddle {
 
 	
 }
+
