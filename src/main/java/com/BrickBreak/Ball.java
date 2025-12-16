@@ -27,8 +27,8 @@ public class Ball {
 		this.size = size;
 		this.xPos = xPos;
 		this.yPos = yPos;
-		this.xVelocity=0;
-		this.yVelocity=0;
+		this.xVelocity=1;
+		this.yVelocity=1;
 		
 	}
 	//methods:
